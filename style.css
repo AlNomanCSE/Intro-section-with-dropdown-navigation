@@ -53,19 +53,29 @@ p {
 .listItems {
   padding-left: 4rem;
   display: flex;
-  flex-direction: column;
   gap: 1rem;
+  flex-direction: column;
 }
-.listItems ul {
+.itemList1 {
+  display: none;
+}
+.itemList2 {
+  display: none;
+}
+.itemList1.display {
+  display: block;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.itemList2.display {
+  display: block;
   padding: 0.5rem 1rem;
 }
-.listItems ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
+
 li {
   font-size: 1.3rem;
+  cursor: pointer;
+  margin: 0.4rem;
 }
 li img {
   margin-right: 0.4rem;
@@ -123,6 +133,35 @@ li img {
     display: flex;
     flex-direction: row;
     gap: 4rem;
+  }
+  .navBarPClistItems li {
+    cursor: pointer;
+  }
+  .navBarPClistItems ul {
+    visibility: hidden;
+  }
+  .navBarPClistItems ul {
+    position: absolute;
+    top: 40px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px 0px 10px 4px #ecdfdf;
+    border-radius: 5px;
+  }
+  .list1.visible {
+    visibility: visible;
+    transition: all 0.3s ease;
+  }
+  .list2.visible {
+    visibility: visible;
+  }
+  .navBarPClistItems .list1 {
+    left: 4rem;
+  }
+  .navBarPClistItems .list2 {
+    left: 16rem;
   }
   .navBarPCLogReg-btn {
     display: flex;
