@@ -32,7 +32,6 @@ p {
   height: 100vh;
   opacity: 100;
   background-color: #d7ae30;
-  opacity: .9;
 }
 .navBarMobile.show {
   visibility: visible;
@@ -119,10 +118,8 @@ li img {
   top: 5rem;
   z-index: -1;
 }
-.mainBody img {
-  max-width: 100%;
-}
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 700px) {
   .logo,
   .hamburgerMenu {
     visibility: hidden;
@@ -156,9 +153,8 @@ li img {
     justify-content: space-around;
   }
   .navBarPClistItems {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
   .navBarPClistItems li {
     cursor: pointer;
@@ -175,6 +171,7 @@ li img {
     gap: 1rem;
     box-shadow: 0px 0px 10px 4px #ecdfdf;
     border-radius: 5px;
+    background-color: var(--AlmostWhite);
   }
   .list1.visible {
     visibility: visible;
@@ -199,5 +196,10 @@ li img {
     width: 70px;
     height: 30px;
     border-radius: 10px;
+  }
+
+  .mainBody img {
+    max-width: 100%;
+    display: block;
   }
 }
