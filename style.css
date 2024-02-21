@@ -30,6 +30,9 @@ p {
   inset: 0;
   left: 10vh;
   height: 100vh;
+  opacity: 100;
+  background-color: #d7ae30;
+  opacity: .9;
 }
 .navBarMobile.show {
   visibility: visible;
@@ -110,7 +113,15 @@ li img {
   border: 0.2px solid var(--MediumGray);
   color: var(--MediumGray);
 }
-
+.mainBody {
+  position: absolute;
+  inset: 0;
+  top: 5rem;
+  z-index: -1;
+}
+.mainBody img {
+  max-width: 100%;
+}
 @media screen and (min-width: 768px) {
   .logo,
   .hamburgerMenu {
