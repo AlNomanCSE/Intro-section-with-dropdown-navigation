@@ -44,7 +44,7 @@ p {
   padding-top: 5rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(4,1fr);
   color: var(--MediumGray);
 }
 .listItems {
@@ -55,6 +55,7 @@ p {
   /* justify-items: center; */
   align-items: center;
 }
+
 .LogReg-btn {
   margin-bottom: 4rem;
   display: flex;
