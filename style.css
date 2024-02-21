@@ -31,15 +31,15 @@ p {
   align-self: center;
   padding: 2rem;
 }
+
 .navItems {
+  /* visibility: hidden; */
   z-index: 5;
   height: 100vh;
   width: 70%;
   position: absolute;
   top: 0;
   right: 0;
-}
-.navItems {
   background-color: var(--AlmostWhite);
   padding-top: 5rem;
   display: grid;
@@ -56,7 +56,7 @@ p {
   align-items: center;
 }
 .LogReg-btn {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
