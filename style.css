@@ -37,7 +37,7 @@ p {
 .hamburgerMenu {
   position: absolute;
   top: 35px;
-  left: 80vw;
+  left: 85vw;
   z-index: 10;
   cursor: pointer;
 }
@@ -112,7 +112,11 @@ li img {
 }
 
 @media screen and (min-width: 768px) {
-  .navBarMobile {
+  .logo,
+  .hamburgerMenu {
+    visibility: hidden;
+  }
+  .navItems {
     visibility: hidden;
   }
   li {
