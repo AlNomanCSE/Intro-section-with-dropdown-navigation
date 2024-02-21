@@ -44,18 +44,24 @@ p {
   padding-top: 5rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4,1fr);
+  grid-template-rows: 1fr 1fr;
   color: var(--MediumGray);
 }
+
 .listItems {
   padding-left: 4rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr) 50px 50px;
   /* justify-items: center; */
   align-items: center;
 }
-
+.listItems ul {
+  padding: 1rem;
+}
+.listItems li{
+    margin-bottom: .3rem;
+}
 .LogReg-btn {
   margin-bottom: 4rem;
   display: flex;
