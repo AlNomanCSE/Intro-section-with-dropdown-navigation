@@ -6,6 +6,22 @@ const FeaturesList = document.querySelector(".FeaturesList");
 const CompanyList = document.querySelector(".CompanyList");
 const itemList1 = document.querySelector(".itemList1");
 const itemList2 = document.querySelector(".itemList2");
+const hamburgerMenu = document.querySelector(".hamburgerMenu");
+const navBarMobile = document.querySelector(".navBarMobile");
+
+let menuOpen = false;
+
+hamburgerMenu.addEventListener("click", () => {
+  if (!menuOpen) {
+    hamburgerMenu.querySelector("img").src = "./images/icon-close-menu.svg";
+    navBarMobile.classList.add("show");
+    menuOpen = true;
+  } else {
+    hamburgerMenu.querySelector("img").src = "./images/icon-menu.svg";
+    navBarMobile.classList.remove("show");
+    menuOpen = false;
+  }
+});
 
 featuresList.addEventListener("click", () => {
   list1.classList.toggle("visible");

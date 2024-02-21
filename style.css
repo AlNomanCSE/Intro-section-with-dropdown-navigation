@@ -25,7 +25,22 @@ p {
   visibility: hidden;
 }
 .navBarMobile {
-  position: relative;
+  position: absolute;
+  visibility: hidden;
+  inset: 0;
+  left: 15vh;
+  height: 100vh;
+}
+.navBarMobile.show {
+  visibility: visible;
+}
+.hamburgerMenu {
+  position: absolute;
+  top: 35px;
+  left: 80vw;
+  z-index: 10;
+  cursor: pointer;
+  width: 10px;
 }
 .logo {
   font-size: 2rem;
@@ -36,13 +51,10 @@ p {
 }
 
 .navItems {
-  z-index: 5;
+  inset: 0;
+  z-index: 3;
   height: 100vh;
   width: 70%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: var(--AlmostWhite);
   padding-top: 5rem;
   display: grid;
   grid-template-columns: 1fr;
