@@ -21,7 +21,10 @@ ul > li {
 p {
   font-size: 18px;
 }
-.navBar {
+.navBarPC {
+  visibility: hidden;
+}
+.navBarMobile {
   position: relative;
 }
 .logo {
@@ -61,8 +64,8 @@ p {
   flex-direction: column;
   gap: 0.5rem;
 }
-li{
-   font-size: 1.3rem;
+li {
+  font-size: 1.3rem;
 }
 li img {
   margin-right: 0.4rem;
@@ -86,14 +89,50 @@ li img {
   border: 0.2px solid var(--MediumGray);
   color: var(--MediumGray);
 }
-main {
-  position: absolute;
-  inset: 0;
-  background-color: black;
-  opacity: 0.7;
-  height: 100vh;
-  z-index: 1;
-}
-@media screen and (min-width: 768px) {
 
+@media screen and (min-width: 768px) {
+  .navBarMobile {
+    visibility: hidden;
+  }
+  li {
+    font-size: 1rem;
+  }
+  .navBarPC {
+    visibility: visible;
+    position: absolute;
+    width: 100vw;
+    inset: 0;
+    display: flex;
+  }
+  .navBarPClogo {
+    width: 15vw;
+    font-size: 2rem;
+    font-weight: 700;
+    align-self: center;
+    text-align: center;
+  }
+  .navBarPCItems {
+    position: absolute;
+    left: 15vw;
+    top: 40%;
+    width: 85vw;
+    display: flex;
+    justify-content: space-around;
+  }
+  .navBarPClistItems {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .navBarPCLogReg-btn {
+    display: flex;
+    gap: 2vw;
+  }
+  .navBarPCLogReg-btn button {
+    background-color: transparent;
+    border: 1px solid black;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+  }
 }
