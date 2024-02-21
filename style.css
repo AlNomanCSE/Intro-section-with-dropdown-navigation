@@ -28,7 +28,7 @@ p {
   position: absolute;
   visibility: hidden;
   inset: 0;
-  left: 15vh;
+  left: 12vh;
   height: 100vh;
 }
 .navBarMobile.show {
@@ -93,7 +93,7 @@ li img {
   margin-right: 0.4rem;
 }
 .LogReg-btn {
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
