@@ -62,7 +62,7 @@ p {
   gap: 0.5rem;
 }
 li{
-   font-size: 1.2rem;
+   font-size: 1.3rem;
 }
 li img {
   margin-right: 0.4rem;
@@ -78,7 +78,7 @@ li img {
 }
 .LogReg-btn button {
   width: 80%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -95,4 +95,5 @@ main {
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
+
 }
