@@ -13,8 +13,7 @@
 body {
   font-size: 16px;
   font-family: "Epilogue", sans-serif;
-  background-color: rgb(62, 60, 60);
-  opacity: 0.5;
+  position: relative;
 }
 ul > li {
   list-style: none;
@@ -30,10 +29,10 @@ p {
   font-weight: 600;
   align-self: center;
   padding: 2rem;
+  color: var(--AlmostBlack);
 }
 
 .navItems {
-  /* visibility: hidden; */
   z-index: 5;
   height: 100vh;
   width: 70%;
@@ -45,7 +44,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  color: var(--MediumGray);
+  color: var(--);
 }
 
 .listItems {
@@ -55,15 +54,18 @@ p {
   gap: 1rem;
 }
 .listItems ul {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 .listItems ul {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-li img{
-    margin-right: .4rem;
+li{
+   font-size: 1.2rem;
+}
+li img {
+  margin-right: 0.4rem;
 }
 .LogReg-btn {
   margin-bottom: 4rem;
@@ -72,11 +74,11 @@ li img{
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 .LogReg-btn button {
-  width: 60%;
-  font-size: 1rem;
+  width: 80%;
+  font-size: 1.2rem;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -84,64 +86,13 @@ li img{
   border: 0.2px solid var(--MediumGray);
   color: var(--MediumGray);
 }
-
-/* .navBar {
-  padding: 1rem 0 0 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 20% 1fr;
+main {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.7;
+  height: 100vh;
+  z-index: 1;
 }
-.logo {
-  font-size: 2rem;
-  font-weight: 600;
-  align-self: center;
-  margin: auto;
+@media screen and (min-width: 768px) {
 }
-.navItems {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  color: var(--MediumGray);
-}
-.listItems {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  align-items: center;
-}
-.LogReg-btn {
-  justify-self: end;
-  align-self: center;
-  margin-right: 2rem;
-}
-.LogReg-btn button {
-  font-size: 1rem;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  background: transparent;
-  border: 0.2px solid var(--MediumGray);
-  color: var(--MediumGray);
-} */
-/* @media screen and (width> 780px) {
-  .navBar {
-    padding: 1rem 0 0 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% 1fr;
-  }
-  .logo {
-    font-size: 2rem;
-    font-weight: 600;
-    align-self: center;
-    margin: auto;
-  }
-  .navItems {
-    grid-template-columns: 1fr 1fr;
-    color: var(--MediumGray);
-  }
-  .listItems {
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
-  }
-} */
