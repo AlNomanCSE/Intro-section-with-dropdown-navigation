@@ -52,7 +52,7 @@ p {
   padding-left: 4rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr) 50px 50px;
+  grid-template-rows: repeat(2, 1fr) 30px 30px;
   /* justify-items: center; */
   align-items: center;
 }
@@ -69,6 +69,7 @@ p {
   justify-content: end;
   align-items: center;
   gap: 1.5rem;
+  padding-bottom: 5rem;
 }
 .LogReg-btn button {
   width: 60%;
