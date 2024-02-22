@@ -112,6 +112,9 @@ li img {
   border: 0.2px solid var(--MediumGray);
   color: var(--MediumGray);
 }
+button {
+  cursor: pointer;
+}
 .mainBody {
   position: absolute;
   inset: 0;
@@ -214,7 +217,7 @@ li img {
     align-items: start;
     padding-left: 6rem;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(1fr, 200px));
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 100px));
   }
   .mainBody .image {
     padding: 5vw;
@@ -230,9 +233,11 @@ li img {
     gap: 5rem;
     width: 50vw;
   }
-  .mainBody img {
-    width: 70vw;
+  .mainBody .image {
   }
+  /* .mainBody img {
+    width: 70vw;
+  } */
   .heroDtails .svgs {
     width: 9vw;
     display: flex;
