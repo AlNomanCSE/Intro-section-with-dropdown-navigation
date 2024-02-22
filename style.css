@@ -156,6 +156,7 @@ li img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+
   .navBarPClistItems li {
     cursor: pointer;
   }
@@ -202,4 +203,17 @@ li img {
     max-width: 100%;
     display: block;
   }
+  .mainBody{
+    width: 100vw;
+  }
+  .mainBody img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.mainBody img{
+  max-width: 100%;
+  display: block;
 }
